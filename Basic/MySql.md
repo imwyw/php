@@ -27,6 +27,11 @@ MySQL 所使用的 SQL 语言是用于访问数据库的最常用标准化语言
 
 ## 脚本
 ### DDL
+```SQL
+-- 表 视图 索引 同义词 簇
+CREATE TABLE/VIEW/INDEX/SYN/CLUSTER
+```
+
 ### DQL
 ```SQL
 SELECT <字段名表>
@@ -35,3 +40,7 @@ WHERE <查询条件>
 ```
 
 ### DML
+1. 插入：INSERT
+2. 更新：UPDATE
+3. 删除：DELETE
+
