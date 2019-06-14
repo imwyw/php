@@ -1,7 +1,8 @@
 # Summary
 * [介绍](README.md)
 
-* [编程基础](.\Basic\README.md)
-    * [语法](.\Basic\Syntax.md)
-    * [MySql](.\Basic\MySql.md)
+* [编程基础]()
+    * [语法](./Basic/Syntax.md)
+    * [面向对象](./Basic/OOP.md)
+    * [MySql](./Basic/MySql.md)
 
