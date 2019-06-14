@@ -358,8 +358,8 @@ namespace MyProject2;
  
 // 另一种语法
 namespace MyProject3 {  
- // MyProject3 命名空间中的PHP代码    
-}  
+ // MyProject3 命名空间中的PHP代码    推荐！！！
+}
 ?>
 ```
 
