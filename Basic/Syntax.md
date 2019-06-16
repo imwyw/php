@@ -4,10 +4,12 @@
     - [基本语法](#基本语法)
         - [php脚本](#php脚本)
         - [注释](#注释)
+        - [输出语句](#输出语句)
+        - [命名空间](#命名空间)
+        - [文件包含语句](#文件包含语句)
     - [PHP变量](#php变量)
         - [弱类型](#弱类型)
         - [作用域](#作用域)
-    - [打印](#打印)
     - [数据类型](#数据类型)
         - [常量](#常量)
         - [字符串](#字符串)
@@ -24,7 +26,6 @@
         - [$_GET](#_get)
     - [函数](#函数)
     - [魔术常量](#魔术常量)
-    - [命名空间](#命名空间)
 
 <!-- /TOC -->
 
@@ -55,6 +56,49 @@ PHP 脚本以 <?php 开始，以 ?> 结束
 /*
 多行注释
 */
+```
+
+<a id="markdown-输出语句" name="输出语句"></a>
+### 输出语句
+echo , print 和 print_r的区别:
+
+* echo   - 可以输出一个或多个字符串
+* print   - 只能输出简单类型变量的值,如int,string
+* print_r - 可以输出复杂类型变量的值,如数组,对象
+
+var_dump() 函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。
+
+```php
+$b = 3.1;
+$c = true;
+var_dump($b, $c);// 输出 float(3.1) bool(true)
+```
+
+<a id="markdown-命名空间" name="命名空间"></a>
+### 命名空间
+
+定义命名空间
+```php
+< ?php  
+namespace MyProject1;  
+// MyProject1 命名空间中的PHP代码  
+ 
+namespace MyProject2;  
+// MyProject2 命名空间中的PHP代码    
+ 
+// 另一种语法
+namespace MyProject3 {  
+ // MyProject3 命名空间中的PHP代码    推荐！！！
+}
+?>
+```
+
+<a id="markdown-文件包含语句" name="文件包含语句"></a>
+### 文件包含语句
+include、require、include_once和require_once
+
+```php
+include '文件名';
 ```
 
 <a id="markdown-php变量" name="php变量"></a>
@@ -93,21 +137,7 @@ PHP 有四种不同的变量作用域：
 * static
 * parameter
 
-<a id="markdown-打印" name="打印"></a>
-## 打印
-echo , print 和 print_r的区别:
 
-* echo   - 可以输出一个或多个字符串
-* print   - 只能输出简单类型变量的值,如int,string
-* print_r - 可以输出复杂类型变量的值,如数组,对象
-
-var_dump() 函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。
-
-```php
-$b = 3.1;
-$c = true;
-var_dump($b, $c);// 输出 float(3.1) bool(true)
-```
 
 <a id="markdown-数据类型" name="数据类型"></a>
 ## 数据类型
@@ -344,24 +374,7 @@ function test()
 test();
 ```
 
-<a id="markdown-命名空间" name="命名空间"></a>
-## 命名空间
 
-定义命名空间
-```php
-< ?php  
-namespace MyProject1;  
-// MyProject1 命名空间中的PHP代码  
- 
-namespace MyProject2;  
-// MyProject2 命名空间中的PHP代码    
- 
-// 另一种语法
-namespace MyProject3 {  
- // MyProject3 命名空间中的PHP代码    推荐！！！
-}
-?>
-```
 
 
 
