@@ -18,6 +18,7 @@
         - [关联数组](#关联数组)
         - [多维数组](#多维数组)
         - [数组排序](#数组排序)
+        - [数组操作](#数组操作)
     - [超级全局变量](#超级全局变量)
         - [$GLOBALS](#globals)
         - [$_SERVER](#_server)
@@ -26,6 +27,8 @@
         - [$_GET](#_get)
     - [函数](#函数)
     - [魔术常量](#魔术常量)
+    - [常用方法](#常用方法)
+        - [日期](#日期)
 
 <!-- /TOC -->
 
@@ -265,6 +268,24 @@ $families = array
 * arsort() - 根据关联数组的值，对数组进行降序排列
 * krsort() - 根据关联数组的键，对数组进行降序排列
 
+<a id="markdown-数组操作" name="数组操作"></a>
+### 数组操作
+
+array_push添加元素，unset删除元素
+
+```php
+$ids = array("a", "b", "c");
+// 数组 添加元素
+array_push($ids, "e");
+print_r($ids); // Array ( [0] => a [1] => b [2] => c [3] => e )
+
+unset($ids[2]);
+print_r($ids);// Array ( [0] => a [1] => b [3] => e )
+```
+
+
+
+
 <a id="markdown-超级全局变量" name="超级全局变量"></a>
 ## 超级全局变量
 PHP中预定义了几个超级全局变量（superglobals） ，这意味着它们在一个脚本的全部作用域中都可用。 
@@ -373,6 +394,14 @@ function test()
 
 test();
 ```
+
+<a id="markdown-常用方法" name="常用方法"></a>
+## 常用方法
+
+<a id="markdown-日期" name="日期"></a>
+### 日期
+
+
 
 
 
