@@ -279,11 +279,18 @@ $ids = array("a", "b", "c");
 array_push($ids, "e");
 print_r($ids); // Array ( [0] => a [1] => b [2] => c [3] => e )
 
+// 删除数组元素
 unset($ids[2]);
 print_r($ids);// Array ( [0] => a [1] => b [3] => e )
 ```
 
-
+array_search()查找数组元素
+```php
+$stu = array("jack" => array("jack", 12, "男"), "lucy" => array("lucy", 22, "女"));
+// 按value值寻找，存在则返回key值，否则返回false
+$res = array_search(array("jack", 12, "男"), $stu);
+var_dump($res);//string(4) "jack"
+```
 
 
 <a id="markdown-超级全局变量" name="超级全局变量"></a>
