@@ -1,0 +1,8 @@
+图片、文件的上传和下载 imwyw 2018-7-10
+
+url:
+http://localhost:9000/ComponentDemo/UploadDemo/Upload.php
+
+默认大小显示可以在php.ini中修改：
+upload_max_filesize=2M
+

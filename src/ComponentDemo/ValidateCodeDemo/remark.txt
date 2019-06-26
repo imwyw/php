@@ -1,0 +1,6 @@
+验证码Demo 2018年7月9日 imwyw
+url：
+http://localhost:xxxx/ComponentDemo/ValidateCodeDemo/ValidateView.php
+
+简单演示验证码的验证，通过session方式保存，与用户表单提交的值进行比对。
+
