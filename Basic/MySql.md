@@ -4,6 +4,7 @@
     - [客户端工具](#客户端工具)
         - [Navicat](#navicat)
         - [dbForge](#dbforge)
+        - [中文乱码](#中文乱码)
     - [脚本](#脚本)
         - [DDL](#ddl)
         - [DQL](#dql)
@@ -32,6 +33,22 @@ MySQL 所使用的 SQL 语言是用于访问数据库的最常用标准化语言
 
 <a id="markdown-dbforge" name="dbforge"></a>
 ### dbForge
+
+<a id="markdown-中文乱码" name="中文乱码"></a>
+### 中文乱码
+设置PHP文件与数据库编码一致，通常我们都会使用 UTF8编码
+
+打开mysql配置文件【my.ini】以后，在[client]下面加上`default-character-set=utf8`，
+
+在[mysqld]下面加上`character_set_server=utf8`，一般都会有character配置，默认配置为utf8，取消注释即可。
+
+重新启动mysql服务
+
+或者可以在代码中进行如下修改：
+```php
+mysqli_query($conn,"SET NAMES UTF8");
+```
+
 
 <a id="markdown-脚本" name="脚本"></a>
 ## 脚本
